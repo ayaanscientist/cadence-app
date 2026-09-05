@@ -1,0 +1,7 @@
+// Physical engine presentation — will be implemented in Phase 2.
+//
+// Screens:
+// - Exercise target list with progression indicators
+// - Daily completion entry
+// - Nutrition dashboard with meal logging
+// - Progression history chart

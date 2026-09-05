@@ -1,0 +1,6 @@
+// Habits presentation — will be implemented in Phase 2.
+//
+// Screens:
+// - Habit list with streak badges and status colors
+// - Habit creation/edit form with stacking configuration
+// - Visual streak calendar (heat map)
