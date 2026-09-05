@@ -21,7 +21,7 @@ class HeaderSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final isAtRisk = streakStatus == HabitStatus.atRisk;
     final badgeColor = isAtRisk ? AppColors.amber : AppColors.emerald;
-    final badgeBg = isAtRisk ? AppColors.amberDim.withValues(alpha: 0.35) : AppColors.emeraldDim.withValues(alpha: 0.35);
+    final badgeBg = isAtRisk ? AppColors.amberDim.withOpacity(0.35) : AppColors.emeraldDim.withOpacity(0.35);
 
     return Container(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
@@ -132,9 +132,9 @@ class HeaderSection extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
               decoration: BoxDecoration(
-                color: AppColors.amberDim.withValues(alpha: 0.2),
+                color: AppColors.amberDim.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: AppColors.amber.withValues(alpha: 0.4)),
+                border: Border.all(color: AppColors.amber.withOpacity(0.4)),
               ),
               child: const Row(
                 children: [

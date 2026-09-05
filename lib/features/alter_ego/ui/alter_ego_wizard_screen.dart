@@ -188,7 +188,7 @@ class AlterEgoWizardScreen extends ConsumerWidget {
               color: Colors.amber,
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
-                BoxShadow(color: Colors.amber.withValues(alpha: 0.4), blurRadius: 10, spreadRadius: 2)
+                BoxShadow(color: Colors.amber.withOpacity(0.4), blurRadius: 10, spreadRadius: 2)
               ]
             ),
             child: const Text('HOLD TO ACTIVATE', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18)),

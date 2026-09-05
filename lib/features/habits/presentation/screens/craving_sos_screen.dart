@@ -280,9 +280,9 @@ class _CravingSosScreenState extends State<CravingSosScreen>
                         height: 220 * _breathAnimation.value,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: _phaseColor.withValues(alpha: 0.12),
+                          color: _phaseColor.withOpacity(0.12),
                           border: Border.all(
-                            color: _phaseColor.withValues(alpha: 0.4),
+                            color: _phaseColor.withOpacity(0.4),
                             width: 2,
                           ),
                         ),
@@ -295,8 +295,8 @@ class _CravingSosScreenState extends State<CravingSosScreen>
                           shape: BoxShape.circle,
                           gradient: RadialGradient(
                             colors: [
-                              _phaseColor.withValues(alpha: 0.8),
-                              _phaseColor.withValues(alpha: 0.3),
+                              _phaseColor.withOpacity(0.8),
+                              _phaseColor.withOpacity(0.3),
                             ],
                           ),
                         ),

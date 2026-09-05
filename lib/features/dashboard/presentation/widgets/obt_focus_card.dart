@@ -36,14 +36,14 @@ class ObtFocusCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isCompleted
-              ? AppColors.emerald.withValues(alpha: 0.5)
+              ? AppColors.emerald.withOpacity(0.5)
               : (isRunning ? AppColors.cyan : AppColors.surfaceBorder),
           width: isRunning ? 1.5 : 1.0,
         ),
         boxShadow: isRunning
             ? [
                 BoxShadow(
-                  color: AppColors.cyan.withValues(alpha: 0.12),
+                  color: AppColors.cyan.withOpacity(0.12),
                   blurRadius: 16,
                   spreadRadius: 2,
                 )
@@ -61,8 +61,8 @@ class ObtFocusCard extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
                   color: isCompleted
-                      ? AppColors.emeraldDim.withValues(alpha: 0.4)
-                      : AppColors.cyanDim.withValues(alpha: 0.4),
+                      ? AppColors.emeraldDim.withOpacity(0.4)
+                      : AppColors.cyanDim.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(6),
                   border: Border.all(
                     color: isCompleted ? AppColors.emerald : AppColors.cyan,
@@ -202,7 +202,7 @@ class ObtFocusCard extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: isCompleted
                           ? AppColors.surfaceElevated
-                          : AppColors.cyanDim.withValues(alpha: 0.4),
+                          : AppColors.cyanDim.withOpacity(0.4),
                       foregroundColor: isCompleted ? AppColors.textSecondary : AppColors.cyan,
                       padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 16),
                       shape: RoundedRectangleBorder(
@@ -210,7 +210,7 @@ class ObtFocusCard extends StatelessWidget {
                         side: BorderSide(
                           color: isCompleted
                               ? AppColors.surfaceBorder
-                              : AppColors.cyan.withValues(alpha: 0.7),
+                              : AppColors.cyan.withOpacity(0.7),
                         ),
                       ),
                       elevation: 0,

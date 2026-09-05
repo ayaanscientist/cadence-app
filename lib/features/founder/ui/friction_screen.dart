@@ -76,7 +76,7 @@ class _FrictionScreenState extends State<FrictionScreen> with SingleTickerProvid
                       height: 100 + (_breathController.value * 100),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.cyanAccent.withValues(alpha: 0.2),
+                        color: Colors.cyanAccent.withOpacity(0.2),
                         border: Border.all(color: Colors.cyanAccent, width: 2),
                       ),
                       child: Center(

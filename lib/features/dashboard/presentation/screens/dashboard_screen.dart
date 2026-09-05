@@ -221,7 +221,7 @@ class DashboardScreen extends ConsumerWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: AppColors.emeraldDim.withValues(alpha: 0.4),
+                      color: AppColors.emeraldDim.withOpacity(0.4),
                       borderRadius: BorderRadius.circular(6),
                       border: Border.all(color: AppColors.emerald),
                     ),

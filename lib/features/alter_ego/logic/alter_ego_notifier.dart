@@ -3,6 +3,7 @@ import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cadence/core/database/tables.dart';
 import 'package:cadence/core/database/daos/alter_ego_dao.dart';
+import 'package:cadence/core/database/app_database.dart';
 import 'package:cadence/features/alter_ego/logic/alter_ego_ai_service.dart';
 // Note: We assume appDatabaseProvider is available in core/database/app_database.dart
 // Since we don't have its provider yet, we'll declare a generic placeholder if needed,

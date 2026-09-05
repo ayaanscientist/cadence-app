@@ -331,7 +331,7 @@ class _BiometricsSetupScreenState extends ConsumerState<BiometricsSetupScreen> {
                     activeTrackColor: AppColors.indigo,
                     inactiveTrackColor: AppColors.surfaceElevated,
                     thumbColor: AppColors.indigo,
-                    overlayColor: AppColors.indigo.withValues(alpha: 0.2),
+                    overlayColor: AppColors.indigo.withOpacity(0.2),
                   ),
                   child: Slider(
                     value: _baselineSleepHours,

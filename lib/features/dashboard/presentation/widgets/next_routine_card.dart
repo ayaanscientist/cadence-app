@@ -24,7 +24,7 @@ class NextRoutineCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: isCompleted
-              ? AppColors.emerald.withValues(alpha: 0.5)
+              ? AppColors.emerald.withOpacity(0.5)
               : AppColors.surfaceBorder,
           width: 1,
         ),
@@ -39,8 +39,8 @@ class NextRoutineCard extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
                   color: isCompleted
-                      ? AppColors.emeraldDim.withValues(alpha: 0.4)
-                      : AppColors.amberDim.withValues(alpha: 0.4),
+                      ? AppColors.emeraldDim.withOpacity(0.4)
+                      : AppColors.amberDim.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(6),
                   border: Border.all(
                     color: isCompleted ? AppColors.emerald : AppColors.amber,
@@ -168,7 +168,7 @@ class NextRoutineCard extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: isCompleted
                     ? AppColors.surfaceElevated
-                    : AppColors.emeraldDim.withValues(alpha: 0.5),
+                    : AppColors.emeraldDim.withOpacity(0.5),
                 foregroundColor: isCompleted ? AppColors.textSecondary : AppColors.emerald,
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 shape: RoundedRectangleBorder(
@@ -176,7 +176,7 @@ class NextRoutineCard extends StatelessWidget {
                   side: BorderSide(
                     color: isCompleted
                         ? AppColors.surfaceBorder
-                        : AppColors.emerald.withValues(alpha: 0.8),
+                        : AppColors.emerald.withOpacity(0.8),
                   ),
                 ),
                 elevation: 0,
